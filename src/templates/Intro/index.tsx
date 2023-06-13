@@ -17,17 +17,27 @@ const Intro = () => {
       y: 0,
       opacity: 1,
       duration: 1,
-      stagger: 0.35
+      stagger: 0.27
     })
   }, [])
 
   return (
-    <S.Intro ref={containerRef}>
-      {C.texts.map((text, index) => (
-        <S.Text key={index}>
-          <span ref={pushTextsRef}>{text}</span>
-        </S.Text>
-      ))}
+    <S.Intro id={C.id} ref={containerRef}>
+      <S.TextsDesktop>
+        {C.textsDesktop.map((text, index) => (
+          <S.Text key={index}>
+            <span ref={pushTextsRef}>{text}</span>
+          </S.Text>
+        ))}
+      </S.TextsDesktop>
+
+      <S.TextsMobile>
+        {C.textsMobile.map((text, index) => (
+          <S.Text key={index}>
+            <span ref={pushTextsRef}>{text}</span>
+          </S.Text>
+        ))}
+      </S.TextsMobile>
     </S.Intro>
   )
 }

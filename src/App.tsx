@@ -6,6 +6,7 @@ import Navbar from "./templates/Navbar";
 import Header from "./templates/Header";
 import Audio from "./components/Audio";
 import Intro from "./templates/Intro";
+import About from "./templates/About";
 
 function App() {
   return (

@@ -19,7 +19,7 @@ const Header = () => {
       defaults : {
         y: 0,
         opacity: 1,
-        duration: 1,
+        duration: 0.8,
         ease: Power1.easeInOut
       }
     })

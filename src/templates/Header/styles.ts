@@ -34,6 +34,12 @@ export const Title = styled.h1`
   z-index: 2;
   opacity: 0;
   transform: translateY(3rem);
+
+  @media (max-width: 600px) {
+    font-size: 4rem;
+    line-height: 4.4rem;
+    transform: translateY(2.5rem);
+  }
 `
 
 export const Subtitle = styled.h6`
@@ -47,4 +53,10 @@ export const Subtitle = styled.h6`
   z-index: 2;
   opacity: 0;
   transform: translateY(2.5rem);
+
+  @media (max-width: 600px) {
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+  transform: translateY(2rem);
+  }
 `
