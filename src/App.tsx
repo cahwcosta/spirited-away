@@ -19,6 +19,7 @@ function App() {
         <Navbar/>
         <Header/>
         <Intro/>
+        <About/>
       </ThemeProvider>
     </div>
   );

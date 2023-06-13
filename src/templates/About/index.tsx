@@ -29,15 +29,15 @@ const About = () => {
   }, [])
 
   return (
-    <S.About ref={aboutRef}>
+    <S.About id={C.id} ref={aboutRef}>
       <S.Content>
       <S.FirstLine>
-        <S.Image ref={firstImageRef} src={'./imgs/about/1.png'}/>
-        <S.Text ref={firstTextRef}>{C.firstText}</S.Text>
+        <S.FirstImage ref={firstImageRef} src={'./imgs/about/1.png'}/>
+        <S.FirstText ref={firstTextRef}>{C.firstText}</S.FirstText>
       </S.FirstLine>
       <S.SecondLine>
-        <S.Image ref={secondImageRef} src={'./imgs/about/2.png'}/>
-        <S.Text ref={secondTextRef}>{C.secondText}</S.Text>
+        <S.SecondImage ref={secondImageRef} src={'./imgs/about/2.png'}/>
+        <S.SecondText ref={secondTextRef}>{C.secondText}</S.SecondText>
       </S.SecondLine>
       </S.Content>
     </S.About>
