@@ -1,14 +1,22 @@
-'use client';
 import styled from 'styled-components';
 
-export const Parallax = styled.section`
-width: 100%;
-max-height: 63.8rem;
-overflow-y: hidden;
-`
+export const Parallax = styled.div`
+  width: 100%;
+  height: 68.7rem;
+  overflow-y: hidden;
+  position: relative;
 
-export const Image = styled.img`
-width: 100vw;
-object-fit: cover;
-height: 100%;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  @media (max-width: 600px) {
+    height: 15rem;
+    width: 100%;
+  }
 `

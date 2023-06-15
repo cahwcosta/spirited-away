@@ -39,7 +39,7 @@ export const FirstLine = styled.div`
 
 export const SecondLine = styled.div`
   ${lineStyle};
-  margin-top: -10rem;
+  margin-top: -15rem;
   margin-left: 19.4rem;
   
   @media (max-width: 600px) {

@@ -26,6 +26,18 @@ const About = () => {
     tl.to(firstTextRef.current, {duration: 0.7, x: 0}, '-=0.3')
     tl.to(secondImageRef.current, {duration: 0.7, x: 0}, '-=0.3')
     tl.to(secondTextRef.current, {duration: 0.7, x: 0}, '-=0.3')
+
+    const tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: aboutRef.current,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true
+      }
+    })
+
+    tl2.to(firstImageRef.current, {y: -50});
+    tl2.to(secondImageRef.current, {y: 40}, '<');
   }, [])
 
   return (

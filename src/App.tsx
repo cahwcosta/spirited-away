@@ -7,6 +7,8 @@ import Header from "./templates/Header";
 import Audio from "./components/Audio";
 import Intro from "./templates/Intro";
 import About from "./templates/About";
+import Parallax from "./templates/Parallax";
+import Scenes from "./templates/Scenes";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Header/>
         <Intro/>
         <About/>
+        <Parallax/>
+        <Scenes/>
       </ThemeProvider>
     </div>
   );
